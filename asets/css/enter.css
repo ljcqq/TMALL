@@ -1,0 +1,141 @@
+body{
+	position: relative;
+}
+#logo {
+	width: 1250px;
+	height: 72px;
+	padding-top: 24px;
+}
+#logo a {
+	float:  left;
+	width: 200px;
+	height: 48px;
+	margin-left: 64px;
+	background: url(../img/logo02.png);
+}
+#banner {
+	width: 100%;
+	height: 588px;
+}
+#banner  a {
+	display: block;
+	width: 100%;
+	height: 588px;
+	background: url(../img/bg01.jpg) no-repeat center/cover;
+}
+#form{
+	padding:0 30px;
+	width: 350px;
+	height: 524px;
+	background: #ffffff;
+	position: absolute;
+	top: 130px;
+	right: 58px;
+	opacity: 0.9;
+}
+#form h3{
+	line-height: 88px;
+	font-size: 24px;
+	text-align: center;
+}
+#form h3 a {
+	color: #f56600;
+}
+#form  input{
+	height: 48px;
+	width: 348px;
+	border: 0;
+	border: 1px solid #e0e0e0;
+	margin: auto;
+	font-size: 12px;
+	color: #969696;
+	line-height: 48px;
+	text-indent: 10px;
+}
+#form .title{
+	position: absolute;
+	top: 162px;
+	text-indent: 10px;
+}
+#form .check{
+	height:28px;
+	font-size: 12px;
+	position: relative;
+	display: none;
+}
+#form .check h4{
+	position: absolute;
+	top: 10px;
+	left:0;
+	color: red;
+	display: none;
+}
+#form  button{
+	height: 48px;
+	width: 350px;
+	border: 0;
+	border: 1px solid #e0e0e0;
+	margin: auto;
+	font-size: 12px;
+	color: white;
+	line-height: 48px;
+	text-align: center;
+	background: #ef5b00;
+	margin-top: 15px;
+	cursor: pointer;
+}
+ #form h4{
+ 	font-size: 12px;
+ 	line-height: 28px;
+ 	color: #333333;
+ }
+ 
+#form h4  a{
+  float: left;
+  color:red;  	
+ }
+#form h4 .a2{
+	float: right;
+	color:#999999
+}
+#form h4 .a1{
+	margin-left: 110px;
+	color:#999999
+}
+#form fieldset{
+	font-family: liang;
+	width:310px;
+	border: 0;
+	border-top: 1px solid #e0e0e0;
+	position: absolute;
+	top: 436px;
+	padding: 0 20px;
+	
+}
+#form fieldset a{
+ margin-left: 36px;
+ float: left;
+ font-size: 30px;
+ line-height: 66px;
+ 
+}
+#form fieldset a:nth-of-type(1){
+	color: #0288d1;
+}
+#form fieldset a:nth-of-type(2){
+	color: #d32f2f;
+}
+#form fieldset a:nth-of-type(4){
+	color: #00d20d;
+	font-size: 40px;
+}
+#form fieldset a:nth-of-type(3){
+	color: #00aaee;
+}
+
+#form fieldset legend{
+	color: #e0e0e0;
+	font-size: 12px;
+	text-align: center;
+}
+

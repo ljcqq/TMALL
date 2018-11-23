@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../asets/css/register.css" />
+		<link rel="stylesheet" href="../asets/css/public1.css" />
+		<script src="../node_modules1/jquery/dist/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="logo">
+				<a href="../index.html"></a>
+			</div>
+			<h2>注册天猫账号</h2>
+			<div id="form">
+				<h4>国家/地区</h4>
+				<div id="inp1">
+					<li class="li1" >中国</li>
+					<div class="list">
+						<a href="#">&#xe645;</a>
+					</div>
+				</div>
+				<div class="inp2">
+						<ul>
+							<li>中国</li>
+							<li>中国台湾</li>
+							<li>美国</li>
+							<li>英国</li>
+							<li>法国</li>
+							<li>德国</li>
+							<li>荷兰</li>
+							<li>朝鲜</li>
+						</ul>
+				</div>
+				<script type="text/javascript">
+				    $('#logo a ').click(function(){
+				    	window.location = "index.html"
+				    })
+					
+					$("body").delegate('#inp1',"click",function(){
+						$('.inp2').css('display','block')
+						return false
+					})
+					$('.inp2 li').mouseenter(function(){
+							Col = $(this).css('background')
+							$(this).css('background','#CCCCCC')
+						})
+					$('.inp2 li').mouseleave(function(){
+							$(this).css('background',Col)
+					    })
+					$('.inp2 li').click(function(){
+						Tex = $(this).html()
+						$('#inp1 .li1').html(Tex)
+					})
+					$('body').click(function(){
+						$('.inp2').css('display','none')
+					})
+				</script>
+				<h4>成功注册账号后，国家/地区将不能更改</h4>
+				<h4>手机号码</h4>
+				<div id="inp3">
+					<li class="li2"><span>+86</span><a href="#">&#xe645;</a></li>
+					<input type="text" placeholder="请输入手机号码" />
+					<ul class="ul3">
+							<li>中国<span>+86</span></li>
+							<li>中国台湾<span>+87</span></li>
+							<li>美国<span>+89</span></li>
+							<li>英国<span>+90</span></li>
+							<li>法国<span>+12</span></li>
+							<li>德国<span>+13</span></li>
+							<li>荷兰<span>+14</span></li>
+							<li>朝鲜<span>+15</span></li>
+				    </ul>
+			
+				</div>
+				<h4 class="h1">! 请正确输入手机号</h4>
+				<script type="text/javascript">
+					$('#inp3 input').blur(function(){
+						var str = /^\d{11}$/
+						if(str.test($(this).val())){
+							$('.h1').css('display','none')
+							
+						}else{
+							$('.h1').css('display','block')
+						}
+					})
+					
+					$("#inp3 li").click(function(){
+						$(".ul3").css('display','block')
+						return false
+					})
+					$('#inp3 ul li').mouseenter(function(){
+							Col = $(this).css('background')
+							$(this).css('background','#CCCCCC')
+						})
+					$('#inp3 ul li').mouseleave(function(){
+							$(this).css('background',Col)
+					    })
+					$('#inp3 ul li ').mouseenter(function(){
+						    $(this).addClass('click')
+						$('#inp3 ul li ').click(function(){
+						    Tex = $("#inp3 ul .click span").html()
+							$('#inp3 .li2 span').html(Tex)
+						})
+					})
+					$('#inp3 ul li').mouseleave(function(){
+						$(this).removeClass('click')
+					})
+					$('body').click(function(){
+						$('.ul3').css('display','none')
+					})
+					
+				</script>
+				<div id="inp4">
+					<h4>请设置密码</h4>
+					<input type="password" placeholder="请设置密码" />
+				</div>
+				<h4 class="h2">!请正确设置密码</h4>
+				<div id="inp5">
+					<h4>请再次输入密码</h4>
+					<input type="password" placeholder="请设置密码" />
+				</div>
+				<h4 class="h3">!两次密码不一致</h4>
+				<div id="inp6">
+					<button>立即注册</button>
+				</div>
+				<h4 class="h4">注册帐号即表示您同意并愿意遵守天猫 <a href="#">用户协议</a><a href="#"> 隐私政策</a></h4>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('#inp4 input').blur(function(){
+						var str = /^[a-zA-Z0-9]{6,18}$/
+						if(str.test($(this).val())){
+							$('.h2').css('display','none')
+							
+						}else{
+							$('.h2').css('display','block')
+						}
+			})
+			$('#inp5 input').blur(function(){
+						if($(this).val() === $('#inp4 input').val()){
+							$('.h3').css('display','none')
+							
+						}else{
+							$('.h3').css('display','block')
+						}
+			})
+			$('#inp6 button').click(function(){
+//				    var getVa= oInp1.value
+//	  		     	var getVa1= oInp2.value
+//	  		     	var date=new Date()
+//	  		     	date.setDate(date.getDate()+3000)
+//	  		     	document.cookie= 'name'+ num1+"="+'{  "id":' + getVa +',"mima"：'+ getVa1+ '}' + ';expires=' + date + ";path=/";
+//	  		     	alert(document.cookie)
+//	  		     	location.href="qq登录.html"
+                    var num1=parseInt(( Math.random()+1)*1000 );
+                    var date = new Date()
+                    date.setDate(date.getDate() + 3000)
+                    document.cookie = 'name' + num1 +"="+'{"id":'+ $('#inp3 input').val()+',"code":' + $('#inp4 input').val() +'}'+';expires='+ date +";path =/";
+					window.location ="enter.html"
+			})
+		</script>
+		<div id="footer1">
+			<p>
+				<a href="#">简体</a>
+				<a href="#">简体</a>
+				<a href="#">English</a>
+				<a href="#">常见问题</a>
+			</p>
+			<p>阿里巴巴公司版权所有-浙ICP备10046444-<a href="#"><span></span></a>浙公网安备11010802020134号-京ICP证110507号</p>
+		</div>
+	</body>
+</html>

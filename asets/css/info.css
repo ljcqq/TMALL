@@ -1,0 +1,254 @@
+#search,#details {
+    width: 12.3rem;
+    margin: 0 auto;
+}
+#search_wrap{
+    background: #ffffff ;
+    border-top: 1px solid black;
+}
+#search {
+    height: 1.78rem;
+    background: #ffffff;
+    padding-top: 0.27rem;
+    font-family: liang;
+}
+#search .seaTop{
+    float: left;
+    width: 100%;
+}
+#logo img {
+    width: 1.3rem;
+    height: 0.5rem;
+    background: pink;
+    margin-left: 0.4rem;
+    float: left;
+    margin-right: 0.7rem;
+}
+#search .seaTop .position{
+    font-size: 0.15rem;
+    color: red;
+    width: 0.78rem;
+    height: 0.38rem;
+    border: 1px solid grey;
+    border-radius: 0.05rem;
+    float: left;
+    text-align: center;
+    line-height: 0.38rem;
+    cursor: pointer;
+    margin-right: 1.0rem;
+}
+#search .seaTop  form{
+    width: 5.40rem;
+    height: 0.36rem;
+    float: left;
+    border: 3px solid red;
+    position:relative;
+}
+#search .seaTop  form input{
+    float: left;
+    border: 0;
+    height: 0.33rem;
+    width: 4.48rem;
+}
+#search .seaTop form button{
+    float: left;
+    width: 0.92rem;
+    height: 0.36rem;
+    background: red;
+    border: 0;
+    font-size: 0.16rem;
+    line-height: 0.36rem;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing:  0.1rem;
+}
+#search .seaTop form p {
+    position: absolute;
+    font-size: 0.16rem;
+    left: 0;
+    top: 0;
+    height: 0.33rem;
+    line-height: 0.36rem;
+    text-indent: 0.1rem;
+}
+#nav{
+    float: left;
+    height: 0.2rem;
+    width: 100%;
+    padding-left: 0.4rem;
+}
+#nav a {
+    float: left;
+    font-size: 0.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.05rem;
+    margin-top: 0.95rem;
+    border-right: 2px solid lightgrey;
+}
+/* --------------details--------------------------------      */
+#details_wrap{
+    background: #ffffff;
+}
+#details {
+    width: 11.9rem;
+    height: 6.08rem;
+    padding: 0 0.2rem;
+}
+#details #box {
+    float:left;
+    width: 4.2rem;
+    height: 4.8rem;
+    position: relative;
+    border: 1px solid red;
+}
+#details #box1 {
+    width:4.2rem;
+    height: 4.2rem;
+}
+#details .mImg {
+    width: 4.2rem;
+    height:4.2rem;
+}
+
+#details .mImg li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#details .mImg li img{
+    width: 4.2rem;
+    height:4.2rem;
+}
+
+#details #updown ul {
+    position: absolute;
+    width: 4.2rem;
+}
+#details  #updown li {
+    margin-top: 0.1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    float: left;
+    margin-left: 0.35rem
+}
+#details #right img {
+    position: absolute;
+    top:0;
+    left:0;
+}
+#details #big{
+    width: 4.2rem;
+    height: 4.2rem;
+    overflow: hidden;
+    position: absolute;
+    left:4.2rem;
+    top:0;
+    border: 1px solid red;
+    display: none;
+}
+#details #details #right img{
+    width: 8rem;
+    height:8rem;
+}
+#details #mask {
+    width: 1.54rem;
+    height:1.54rem;
+    background: grey;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+    display: none;
+}
+#details .introduce{
+    padding: 0 0.1rem;
+    width: 5rem;
+    height: 4.2rem;
+    float: right;
+}
+#details .introduce .info{
+    font-size: 0.16rem;
+}
+#details .introduce .info h3{
+    font-size: 0.16rem;
+    line-height: 0.2rem;
+    height: 0.2rem;
+    padding-left: 0.1rem;
+}
+#details .introduce .info p{
+    color: red;
+    font-size: 0.12rem;
+    line-height: 0.16rem;
+    height: 0.16rem;
+    padding-left: 0.1rem;
+}
+#details .introduce .grey{
+    width: 5rem;
+    height: 1.3rem;
+    background: #f0efef;
+}
+#details .introduce .grey p{
+    font-size: 0.14rem;
+    line-height: 0.16rem;
+    height: 0.2rem;
+    line-height:0.2rem;
+    padding-left: 0.1rem;
+}
+#details .introduce .grey p img{
+    width: 0.58rem;
+    height: 0.16rem;
+
+}
+#details .introduce .grey p b{
+    float: right;
+}
+#details .introduce .grey h4{
+    padding-left: 0.1rem;
+}
+#details .introduce .grey h4 span{
+    float: left;
+    font-size: 0.12rem;
+    margin-right: 0.5rem;
+}
+#details .introduce .grey h4 b{
+    font-size: 0.4rem;
+    float: left;
+    color: red;
+}
+#details .introduce .grey h4{
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+#details .introduce .grey h3 span{
+    margin-right: 0.5rem;
+}
+#details .introduce .grey h3{
+    font-size: 0.14rem;
+    padding-left: 0.1rem;
+}
+#details .introduce .freight{
+    width: 4.8rem;
+    padding: 0 0.1rem;
+    height: 0.6rem;
+    background: #ffffff;
+    font-size: 0.14rem;
+}
+#details .introduce .freight span{
+    float: left;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+#details .introduce .num{
+    width: 1.82rem;
+    height: 0.4rem;
+    font-size: 0.16rem;
+    background:red;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+#details .introduce .num a{
+    color: #ffffff;
+}

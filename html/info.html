@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../asets/css/public.css" />
+    <script src="../node_modules1/jquery/dist/jquery.min.js"></script>
+    <script src="../asets/js/style.js"></script>
+    <link rel="stylesheet" href="../asets/css/info.css"/>
+    <script src="../asets/js/jquery.min.js"></script>
+    <script src="../asets/js/cookie.js"></script>
+    <!--<script src="jquery.cookie.js"></script>-->
+    <script src="../asets/js/jquery.pagination.js"></script>
+
+</head>
+<body>
+<div id="top_wrap">
+    <div id="top">
+        <div class="top_left">
+            <a href="#" >喵，欢迎来天猫</a>
+            <a href="#" class="skip">请登陆</a>
+            <a href="" class="skip">免费注册     </a>
+        </div>
+        <div class="top_right">
+            <ul>
+                <li class="skip1"><a href="#"  >我的淘宝</a> <b class="triangle">&#xe645;</b></li>
+                <li class="skip2">
+                    <a href="#">已买到宝贝</a><br/>
+                    <a href="#">已卖出宝贝</a>
+                </li>
+                <li><span class="vector" >&#xe601</span> <a href="#" class="skip">购物车</a></li>
+                <li><a href="#" class="skip">收藏夹</a> <b class="triangle">&#xe645;</b></li>
+                <li><span class="vector">&#xe626;</span> <a href="#"class="skip">手机版</a></li>
+                <li><a href="#" class="skip">淘宝网</a></li>
+                <li><a href="#" class="skip">商家支持</a> <b class="triangle">&#xe645;</b></li>
+                <li><span class="vector">&#xe77d;</span> <a href="#" class="skip">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!------------------------------search---------------------------------------------------->
+<div id="search_wrap">
+    <div id="search">
+        <div class="seaTop">
+            <div id="logo">
+                 <a href="#">
+                     <img src="../asets/img/logo04.jpg"/>
+                 </a>
+            </div>
+            <div class="position">
+                <span>北京 &#xe645;</span>
+            </div>
+            <form>
+                <input>
+                <button>搜索</button>
+                <p>搜索天猫超市商品</p>
+            </form>
+        </div>
+        <div id="nav">
+            <a href="#">首页</a>
+            <a href="#">量贩装</a>
+            <a href="#">生鲜区</a>
+            <a href="#">企业采购</a>
+            <a href="#">大家电</a>
+        </div>
+    </div>
+</div>
+<!-------------------------------------details----------------------------->
+<div id="details_wrap">
+    <div id="details">
+        <div id="box">
+            <div id="box1">
+                <div id="small">
+                    <ul class="mImg" id="header">
+                        <li><img  /></li>
+
+                    </ul>
+                    <div id="mask"></div>
+                </div>
+                <div id="ss">
+                    <ul id="updown">
+
+                    </ul>
+                </div>
+                <div id="big">
+                    <ul class="bImg" id="right">
+                        <li><img  /></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="introduce">
+            <div class="info">
+                <h3>宁安堡 正宗宁夏中宁枸杞免洗特级250g小袋装防潮枸杞茶男肾苟杞</h3>
+                <p>小袋装 不返潮没烦恼 免洗开袋即食 地道好枸杞</p>
+            </div>
+            <div class="grey">
+                <p><img src="../asets/img/in01.png"><b>全天猫实物商品通用</b></p>
+                <h4><span>价格 </span> <b> 23</b></h4>
+                <h3><span>本店活动</span> <i> 满20减5</i></h3>
+            </div>
+            <div class="freight">
+                    <span>运费</span>
+                    <div class="fre1">
+                        <P>北京至 北京东城区 满88(20Kg内)包邮 配送规则</P>
+                        <p>次日达 23:59前付款，承诺11月22日送达</p>
+                    </div>
+            </div>
+            <button class="num">
+                <a href="shopcar.html">购物车</a>
+                <span id="shopNum">0</span>
+            </button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+<script>
+    // http://localhost:63342/WWW/TMAll/html/info.html?id=supermarket&&1002
+    var id = location.search.split("?")[1].split("=")[1].split("&&")[1];
+    var key = location.search.split("?")[1].split("=")[1].split("&&")[0];
+    $(function(){
+        $.ajax({
+            url:"../asets/data/data.json",
+            success:function(str){
+               $(".info h3") .text(str[key][id].title)
+                $(".info p").text(str[key][id].inf)
+                $(".grey h4 b").text(str[key][id].price)
+                icon ="../"+ str[key][id].icon
+
+                $("#box1 img").attr("src",icon)
+                $(".num a").click(function(){
+                    var flag = true;//假设值为true时  向arr中push新的商品对象
+                    var arr = [];//存放多个商品对象
+                    //data()方法用来获取data-*的自定义属性值
+                    //存放一个商品对象的信息
+                    // console.log(str[key][id].price)
+                    // $(".info h3") .text(str[key][id].title)
+                    // $(".info p").text(str[key][id].inf)
+                    // $(".grey h4 b").text(str[key][id].price)
+                    // icon ="../"+ str[key][id].icon
+                    console.log(icon)
+                    console.log(str[key][id].id )
+                    console.log(str[key][id].title )
+                    console.log(str[key][id].price)
+                    price = (str[key][id].price).substring(1,5)
+                    console.log(price)
+                    var json = {
+                        "id":str[key][id].id ,
+                        "name":str[key][id].title,
+                        "srcc":icon,
+                        "price":price,
+                        "count":1
+                    }
+                    //由于每次单击按钮时会将数组清空
+                    //所以先取出cookie中的数据 这个数据实际上是一个数组brr
+                    //将这个数组brr中的数据存入到arr中
+                    var brr = getCookie("shoplist");
+                    //第一次购买商品时  直接将这个商品存入到arr就可以
+                    if( brr.length != 0 ){
+                        arr = brr;
+                        //遍历数组arr  判断当前购买的商品在arr中是否存在
+                        //如果存在 就将商品的count++
+                        for( var i = 0 ; i < arr.length ; i++ ){
+                            if( json.id == arr[i].id ){
+                                arr[i].count++;
+                                flag = false;
+                                break;
+                            }
+                        }
+                    }
+                    if( flag ){
+                        //将当前购买的商品对象存入到数组中
+                        arr.push( json );
+                    }
+                    //将数组存入到cookie中
+                    setCookie( "shoplist",JSON.stringify( arr )  );
+                    console.log(document.cookie);
+                })
+                //$.fnInit()
+            }
+        })
+    })
+    //点击购买按钮  完成商品的购买功能
+    //点击按钮时，获取该按钮对应的商品的所有信息 存入到一个对象中
+    //考虑到 用户可能会购买多个商品  将多个商品对象存入到数组中
+    //因为按钮是动态创建的，所以使用委托实现为button按钮添加单击事件
+
+</script>
+<!-------------------------bottom----------------------------->
+<div id="bottom_wrap">
+    <div id="bottom">
+        <div class="bottom_top">
+            <a class="you">
+                <img src="../asets/img/b1.jpg" />
+                <h4>品质保障</h4>
+                <p>品质护航 购物无忧</p>
+            </a>
+            <a class="you">
+                <img src="../asets/img/b2.jpg" />
+                <h4>七天无理由退换货</h4>
+                <p>为你提供售后无忧保障</p>
+            </a>
+            <a class="you">
+                <img src="../asets/img/b3.jpg" />
+                <h4>特色服务体验</h4>
+                <p>为你呈现不一样的服务</p>
+            </a>
+            <a class="you">
+                <img src="../asets/img/b4.jpg" />
+                <h4>帮助中心</h4>
+                <p>你的购物指南</p>
+            </a>
+        </div>
+        <div class="bottom_bt">
+            <div class="list">
+                <h3><a href="#">购物指南</a></h3>
+                <p><a href="#">免费注册</a> </p>
+                <p><a href="#">开通支付宝</a> </p>
+                <p><a href="#">支付宝充值</a> </p>
+            </div>
+            <div class="list">
+                <h3><a href="#">天猫保障</a> </h3>
+                <p><a href="#">发票保障</a> </p>
+                <p><a href="#">售后规则</a> </p>
+                <p><a href="#">缺货赔付</a> </p>
+            </div>
+            <div class="list">
+                <h3><a href="#">支付方式</a> </h3>
+                <p><a href="#">快捷方式</a> </p>
+                <p><a href="#">信用卡</a> </p>
+                <p><a href="#">蚂蚁花呗</a> </p>
+                <p><a href="#">货到付款</a> </p>
+            </div>
+            <div class="list">
+                <h3><a href="#">商家服务</a> </h3>
+                <p><a href="#">天猫规则</a> </p>
+                <p><a href="#">商家入住</a> </p>
+                <p><a href="#">商家中心</a> </p>
+                <p><a href="#">天猫智库</a> </p>
+                <p><a href="#">物流服务</a> </p>
+                <p><a href="#">喵言喵语</a> </p>
+                <p><a href="#">运营服务</a> </p>
+            </div>
+            <div class="list">
+                <h3><a href="#">手机天猫</a> </h3>
+                <a href="#"><img src="../asets/img/ma01.jpg"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------footer--------------------------------------->
+<div id="footer_wrap " >
+    <div id="footer" style="background: #c40000;">
+        <div class="ft1">
+            <a href="#">关于天猫</a>
+            <a href="#">帮助中心</a>
+            <a href="#">开放平台</a>
+            <a href="#">诚聘英才</a>
+            <a href="#">联系我们</a>
+            <a href="#">网站合作</a>
+            <a href="#">法律声明</a>
+            <a href="#">隐私权政策</a>
+            <a href="#">知识产权</a>
+            <a href="#">廉政举报</a>
+            <a href="#">规则意见征集</a>
+        </div>
+        <div class="ft2">
+            <a href="#">阿里巴巴集团</a>
+            <a href="#">淘宝网</a>
+            <a href="#">天猫</a>
+            <a href="#">聚划算</a>
+            <a href="#">全球速卖通</a>
+            <a href="#">阿里巴巴交易市场</a>
+            <a href="#">1688</a>
+            <a href="#">阿里妈妈</a>
+            <a href="#">飞猪</a>
+            <a href="#">阿里云计算</a>
+            <a href="#">Alios</a>
+            <a href="#">阿里通讯</a>
+            <a href="#">万网</a>
+            <a href="#">高德</a>
+            <a href="#">uc</a>
+            <a href="#">友盟</a>
+            <a href="#">虾米</a>
+            <a href="#">玎钉</a>
+            <a href="#">支付宝</a>
+        </div>
+        <div class="ft3">
+            <p>
+                增值电信业务经营许可证： <a href="#">浙B2-20110446</a>
+                网络文化经营许可证：<a href="#">浙网文[2015]0295-065号</a>
+                <a href="#">12318举报</a>
+                <a href="#">出版物网络交易平台服务经营备案证：</a>
+                <a href="#">新出发浙备字第001号</a>
+            </p>
+        </div>
+        <div class="ft4">
+            <p>
+                <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+                <span>互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005</span>
+                <a href="#"><img src="../asets/img/ft01.png" />浙公网安备 33010002000120号 （浙）网械平台备字[2018]第00002号</a>
+            </p>
+        </div>
+        <div class="ft5">
+            <p>© 2003-2018 TMALL.COM 版权所有</p>
+        </div>
+        <div class="ft6">
+            <a href="#">
+                <img src="../asets/img/ft02.jpg"/>
+            </a>
+            <a href="#">
+                <img src="../asets/img/ft03.jpg"/>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    //标题的下标和内容的下标一一对应
+    var olist = $id("header").getElementsByTagName("li");
+    var ulist = $id("updown").getElementsByTagName("li");
+    var rlist= $id("right").getElementsByTagName("li");
+    var box1=$id("box1"),
+        small = $id("small"),
+        mask= $id("mask"),
+        big=$id("big");
+    //为标题添加相同事件 循环
+    for(let i = 0; i < ulist.length; i++) {
+        //ulist[i].index=i;//为标题添加属性，用来存储每一个标题在页面中的下标
+        ulist[i].onmouseenter = function() {
+            for(var j = 0; j < ulist.length; j++) {
+                olist[j].style.display = "none";
+                rlist[j].style.display = "none";
+            }
+            olist[i].style.display = "block";
+            rlist[i].style.display ="block";
+        }
+    }
+    small.onmouseenter=function(){
+        mask.style.display="block";
+        big.style.display="block"
+    }
+    small.onmouseleave=function(){
+        mask.style.display="none";
+        big.style.display="none"
+    }
+
+    small.onmousemove=function(e){
+        var e=e||event;
+        //鼠标在mask的中间位置因此宽高都要除以2
+        var disX = e.pageX - box1.offsetLeft - mask.offsetWidth;
+        var disY = e.pageY -box1.offsetTop- mask.offsetHeight*2;
+        //设置mask移动的最大边界
+        var maxL = box1.offsetWidth - mask.offsetWidth;
+        var maxT = box1.offsetHeight - mask.offsetHeight;
+        //判断mask的left和header
+        x = disX<0?0:(disX>maxL?maxL:disX);
+        y = disY<0?0:(disY>maxT?maxT:disY);
+        mask.style.left = x +  "px";
+        mask.style.top = y  +"px";
+        for(var j=0;j<rlist.length;j++){
+            //移动比例：大图的left/mask的left=大图的宽度/小图宽度
+            var bigImgLeft=
+                x*(rlist[j].children[0].offsetWidth)/(small.offsetWidth);
+            var bigImgheader=
+                y*(rlist[j].children[0].offsetHeight)/(small.offsetHeight);
+            //设置大图移动的距离
+            rlist[j].children[0].style.left = -bigImgLeft + "px";
+            rlist[j].children[0].style.top = -bigImgheader + "px";
+        }
+    }
+    function $id(id){
+        return document.getElementById(id);
+    }
+</script>

@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+li{list-style:none;}
+a{text-decoration:none;}
+img{border:none;vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+body{font-family:"微软雅黑"}
+.left{float:left;}
+.right{float:right;}
+/*@font-face{
+			font-family:liang;
+			src:url(../font/iconfont.eot),
+			url(../font/iconfont.svg),
+			url(../font/iconfont.ttf),
+			url(../font/iconfont.woff);
+}*/
+@font-face {font-family: 'liang';
+    src: url('../../font/iconfont.eot'); /* IE9*/
+    src: url('../../font/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+#top,#nav,#bottom,#footer{
+    width: 1226px;
+    margin: auto;
+}
+#top_wrap{
+	background: #333333 ;
+}
+#top{
+	height:26px ;
+	width: 1226px;
+	background: #333333;
+	font-size: 12px;
+	color: #b0b0b0;
+	margin: auto;
+	
+	
+}
+#top .top_left{
+	float: left;
+}
+#top .top_right{
+	float: right;
+}
+#top li {
+	height: 14px;
+	float: left;
+	
+}
+#top li a {
+	line-height: 16px;
+	float: left;
+	color: #b0b0b0;
+	border-right: 2px solid #424242;
+	margin-top: 6px;
+	padding: 0 8px;
+}
+#top li .a1{
+	padding-left: 0;
+}
+#top li .a2{
+	border: 0;
+}
+#top .top_right .b1 {
+	float: left;
+	width: 18px;
+	height: 14px;
+	background: pink;
+	background: url(../../register/images/top1.jpg) no-repeat center/cover;
+	margin-right: 2px;
+}
+#top .top_right .li1{
+	background: #424242;
+}
+#bottom_wrap{
+	background: #ffffff;
+}
+#bottom{
+	background: #ffffff;
+	height: 272px;
+	z-index: 10;
+}
+
+#bottom .bottom_one{
+	width: 100%;
+	height: 52px;
+	border-bottom: 2px solid #e0e0e0;
+	padding-top: 28px;
+	display: flex;
+	justify-content: space-around;
+}
+#bottom .bootom_one a {
+	float: left;
+}
+#bottom .bottom_one .a3{
+	color: #616161;
+	font-size: 14px;
+	line-height: 26px;
+	
+}
+#bottom .bottom_two{
+	border-right: 2px solid #e0e0e0;
+	padding: 0 60px;
+	height: 26px;
+}
+#bottom .bottom_three{
+	margin-top: 18px;
+}
+#bottom .bottom_four{
+	text-align: left;
+	width: 162px;
+	float: left;
+}
+#bottom .bottom_four a {
+	color: #757575;
+	font-size: 12px;
+}
+#bottom .bottom_four h3{
+	line-height: 58px;
+}
+#bottom .bottom_four h3 a {
+	color: #424242;
+	font-size: 14px;
+}
+#bottom .bottom_four p{
+	line-height: 30px;
+}
+#bottom .bottom_five{
+	float: left;
+	width: 250px;
+	margin-top: 22px;
+	text-align: center;
+}
+#bottom .bottom_five a {
+	font-family: liang;
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	border: 2px solid #ff6700;
+	color: #ff6700;
+	font-size: 12px;
+	line-height: 30px;
+}
+#bottom .bottom_five h3{
+	color: #ff6700 ;
+	font-size: 16px;
+	line-height: 20px;
+	
+}
+#bottom .bottom_five p{
+	color: #616161;
+	line-height: 20px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+#footer_wrap{
+	background: #fafafa;
+}
+#footer{
+	background: #fafafa;
+	height: 182px;
+}
+#footer .footer_one{
+	padding-top: 30px;
+	height: 60px;
+}
+#footer .footer_one .logo{
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+#footer .footer_one .logo a {
+	float: left;
+	width: 60px;
+	height: 60px;
+	background: url(../../register/images/logo_03.jpg) no-repeat center/cover;
+}
+#footer .footer_one .footer_two {
+	float: left;
+}
+#footer .footer_one .footer_two li{
+	float: left;
+}
+#footer .footer_one .footer_two li a{
+	padding:0 6px ;
+	float: left;
+	color: #757575;
+	line-height: 14px;
+	font-size: 12px;
+	border-right: 2px solid #b0b0b0;
+}
+#footer .footer_one .footer_two .last{
+	border: 0;
+}
+#footer .footer_one .footer_two  p{
+	font-family: liang;
+	font-size: 12px;
+	color: #b0b0b0;
+	padding-left: 6px;
+	line-height: 20px;
+}
+#footer .footer_three{
+	width: 430px;
+	height: 30px;
+	float: right;
+}
+#footer .footer_three a{
+	width: 430px;
+	height: 30px;
+	float: right;
+	background: url(../../register/images/logo5.jpg);
+}
+#footer .footer_four{
+	font-size: 20px;
+	line-height: 78px;
+	text-align: center;
+	color: #bababa;
+}
+#footer1{
+	height: 90px;
+	padding-top: 30px;
+}
+#footer1 p{
+	text-align: center;
+	font-size: 12px;
+	line-height: 32px;
+}
+#footer1 p a {
+	color: black;
+	margin-right: 5px;
+}
+#footer1 p span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../../register/images/ghs.png) no-repeat center/cover;
+}
+
+
+
+
+
+

@@ -1,0 +1,427 @@
+{
+  "brand": [
+    "asets/img/01.jpg",
+    "asets/img/02.jpg",
+    "asets/img/03.jpg"
+  ],
+  "mark": [
+    "asets/img/m1.jpg",
+    "asets/img/m2.jpg",
+    "asets/img/m3.jpg",
+    "asets/img/m4.jpg",
+    "asets/img/m5.jpg",
+    "asets/img/m6.jpg",
+    "asets/img/m7.jpg",
+    "asets/img/m8.jpg",
+    "asets/img/m9.jpg",
+    "asets/img/m10.jpg",
+    "asets/img/m11.jpg",
+    "asets/img/m12.jpg",
+    "asets/img/m13.jpg",
+    "asets/img/m14.jpg",
+    "asets/img/m15.jpg",
+    "asets/img/m16.jpg",
+    "asets/img/m17.jpg",
+    "asets/img/m18.jpg",
+    "asets/img/m19.jpg",
+    "asets/img/m20.jpg",
+    "asets/img/m21.jpg",
+    "asets/img/m22.jpg",
+    "asets/img/m23.jpg",
+    "asets/img/m24.jpg",
+    "asets/img/m25.jpg",
+    "asets/img/m26.jpg",
+    "asets/img/m27.jpg",
+    "asets/img/m28.jpg",
+    "asets/img/m29.jpg",
+    "asets/img/m30.jpg"
+  ],
+  "supermarket": [
+    {
+      "id": 1002,
+      "icon": "asets/img/sm08.jpg",
+      "title": "AXE/斧头洗衣液锁色",
+      "inf": "护理 3kg解决褪色",
+      "price": "￥61.1"
+    },
+    {
+      "id": 1003,
+      "icon": "asets/img/sm03.jpg",
+      "title": "【天猫超市】",
+      "inf":"Huawei/华为 P20",
+      "price": "￥4988"
+    },
+    {
+      "id": 1004,
+      "icon": "asets/img/sm04.jpg",
+      "title": "光明赏味酪乳发酵乳",
+      "inf": "(原味)100g*3冷藏酸",
+      "price": "￥17.8"
+    },
+    {
+      "id": 1005,
+      "icon": "asets/img/sm05.jpg",
+      "title": "金龙鱼 纯正 玉米油",
+      "inf": "4L 食用油 非转基因",
+      "price": "￥39.8"
+    },
+    {
+      "id": 1006,
+      "icon": "asets/img/sm06.jpg",
+      "title": "金沙河面粉多用途麦",
+      "inf": "芯粉1KG馒头 烘焙面",
+      "price": "￥10.8"
+    },
+    {
+      "id": 1007,
+      "icon": "asets/img/sm07.jpg",
+      "title": "味事达味极鲜特酱",
+      "inf": "油1.9L 蒸鱼豉油 黄豆",
+      "price": "￥19.8"
+    }
+  ],"HK":[{
+      "id": 1008,
+      "icon": "asets/img/hk01.png",
+      "title": "味事达味极鲜特酱",
+      "inf": "油1.9L 蒸鱼豉油 黄豆",
+      "price": "￥19.8"
+    },{
+      "id": 1009,
+      "icon": "asets/img/hk02.jpg",
+      "title": "味事达味极鲜特酱",
+      "inf": "油1.9L 蒸鱼豉油 黄豆",
+      "price": "￥19.8"
+    },
+    {
+      "id": 1010,
+      "icon": "asets/img/hk03.jpg",
+      "title": "Shisedo/资生堂",
+      "inf": "UNO吾诺男士泡沫洗",
+      "price": "￥42"
+    },
+    {
+      "id": 1011,
+      "icon": "asets/img/hk04.jpg",
+      "title": "英国Boots博资小黄",
+      "inf": "瓜面霜补水保湿美白",
+      "price": "￥68"
+    },
+    {
+      "id": 1012,
+      "icon": "asets/img/hk05.jpg",
+      "title": "COOP进口阿拉比卡",
+      "inf": "速溶咖啡100g灌装",
+      "price": "￥68"
+    },
+    {
+      "id": 1013,
+      "icon": "asets/img/hk06.png",
+      "title": "味事达味极鲜特酱",
+      "inf": "油1.9L 蒸鱼豉油 黄豆",
+      "price": "￥19.8"
+    },
+    {
+      "id": 1014,
+      "icon": "asets/img/hk07.jpg",
+      "title": "维生素e油天然维生素",
+      "inf": "e软胶囊维e胶囊祛斑",
+      "price": "￥218"
+    },{
+      "id": 1015,
+      "icon": "asets/img/hk08.jpg",
+      "title": "EMPORIO ARMANI",
+      "inf": "安普里奥·阿玛尼勇士",
+      "price": "￥984"
+    },
+    {
+      "id": 1016,
+      "icon": "asets/img/hk09.jpg",
+      "title": "【包邮包税】港版雅",
+      "inf": "培4段心美力婴幼儿牛",
+      "price": "￥216"
+    },{
+      "id": 1017,
+      "icon": "asets/img/sm06.jpg",
+      "title": "KLORANE",
+      "inf": "油肤巾70张/包",
+      "price": "￥45"
+    }
+  ],"pic":[
+      "asets/img/img01.jpg"
+  ],"beauty":[{
+    "id": 1018,
+    "icon": "asets/img/bt02.jpg",
+    "title": "回力家居棉拖男冻",
+    "inf": "季室内包跟厚底防滑",
+    "price": "￥39"
+  },{
+    "id": 1019,
+    "icon": "asets/img/bt06.jpg",
+    "title": "秋季男装NIANJEEP",
+    "inf": "休闲裤男长裤直筒宽",
+    "price": "￥88"
+  },{
+    "id": 1020,
+    "icon": "asets/img/bt04.jpg",
+    "title": "乔丹男鞋",
+    "inf": "纯黑色运动鞋",
+    "price": "￥169"
+  },{
+    "id": 1021,
+    "icon": "asets/img/bt05.jpg",
+    "title": "卡帝乐鳄鱼男士包包",
+    "inf": "真皮手提包休闲手拿",
+    "price": "￥309"
+  },{
+    "id": 1022,
+    "icon": "asets/img/bt06.jpg",
+    "title": "Waliy/艾丽素小黄瓜",
+    "inf": "舒柔乳液300ml温和",
+    "price": "￥49"
+  },{
+    "id": 1023,
+    "icon": "asets/img/bt04.jpg",
+    "title": "SHOEBOX/鞋柜东加",
+    "inf": "绒中筒靴女靴防水台",
+    "price": "￥59"
+  },{
+    "id": 1024,
+    "icon": "asets/img/bt08.jpg",
+    "title": "2018秋冬新歌秘密之",
+    "inf": "冠打底裤女显瘦腿袜",
+    "price": "￥58"
+  },
+  {
+    "id": 1025,
+    "icon": "asets/img/sm06.jpg",
+    "title": "风水阁黑曜石手链 男",
+    "inf": "士银925珠虎",
+    "price": "￥119"
+  }
+ ],"Play":[
+  {
+    "id": 1026,
+    "icon": "asets/img/pl02.jpg",
+    "title": "正品夏普脱臭袜",
+    "inf": "网 FZ-BD20ZD",
+    "price": "￥100"
+  },
+  {
+    "id": 1027,
+    "icon": "asets/img/pl03.jpg",
+    "title": "原装正品无线蓝",
+    "inf": "牙耳机运动跑步",
+    "price": "￥128"
+  },{
+    "id": 1028,
+    "icon": "asets/img/pl04.jpg",
+    "title": "浩酷 华为",
+    "inf": "Watch2 pro表带",
+    "price": "￥108"
+  },{
+    "id": 1029,
+    "icon": "asets/img/pl5.jpg",
+    "title": "DELL/戴尔无线鼠",
+    "inf": "标WM126笔记本",
+    "price": "￥75"
+  },{
+    "id": 1030,
+    "icon": "asets/img/pl06.jpg",
+    "title": "金士顿",
+    "inf": "DTLPG3 USB3.0",
+    "price": "￥169"
+  },{
+    "id": 1031,
+    "icon": "asets/img/pl07.jpg",
+    "title": "美的暖风机",
+    "inf": "NTY20-15C热风",
+    "price": "￥249"
+  },{
+    "id": 1032,
+    "icon": "asets/img/pl08.jpg",
+    "title": "Yamaha/雅马哈",
+    "inf": "DM-305话筒有",
+    "price": "￥203"
+  },{
+    "id": 1033,
+    "icon": "asets/img/pl09.jpg",
+    "title": "Golden Field/金 ",
+    "inf": "河田 S300(尊享)",
+    "price": "￥119"
+  }
+],"Health":[
+  {
+    "id": 1034,
+    "icon": "asets/img/hl02.jpg",
+    "title": "创意可爱不锈钢 ",
+    "inf": "便携餐具套装筷",
+    "price": "￥7"
+  },{
+    "id": 1035,
+    "icon": "asets/img/hl03.jpg",
+    "title": "桂格恐龙小趣蛋 ",
+    "inf": "桂格恐龙小趣蛋",
+    "price": "￥32.8"
+  },{
+    "id": 1036,
+    "icon": "asets/img/hl04.jpg",
+    "title": "爱尚山药 ",
+    "inf": "35g*3袋咸蛋黄番",
+    "price": "￥9.9"
+  },{
+    "id": 1037,
+    "icon": "asets/img/hl05.jpg",
+    "title": "得力透明胶带打 ",
+    "inf": "包封箱胶带批发",
+    "price": "￥3.9"
+  },{
+    "id": 1038,
+    "icon": "asets/img/hl06.jpg",
+    "title": "帮宝适超爽干爽 ",
+    "inf": "拉拉裤L52片大号",
+    "price": "￥84"
+  },
+  {
+    "id": 1039,
+    "icon": "asets/img/hl07.jpg",
+    "title": "马来西亚 ",
+    "inf": "supper碳烤榛果",
+    "price": "￥57.8"
+  }, {
+    "id": 1040,
+    "icon": "asets/img/hl08.jpg",
+    "title": "凯丰电子防水秤 ",
+    "inf": "电子称 计重秤厨",
+    "price": "￥290"
+  }, {
+    "id": 1041,
+    "icon": "asets/img/hl09.jpg",
+    "title": "遇见香氛coco洗 ",
+    "inf": "发水护发素沐浴",
+    "price": "￥244"
+  }
+],"love":[
+  {
+    "id": 1042,
+    "icon": "asets/img/l02.jpg",
+    "title": "科沃斯扫地极其 ",
+    "inf": "人地宝Dj吸尘35",
+    "price": "￥1890.0"
+  },{
+    "id": 1043,
+    "icon": "asets/img/l01.jpg",
+    "title": "【详情页抢410 ",
+    "inf": "券】Apple/苹果",
+    "price": "￥7099.0"
+  },{
+    "id": 1044,
+    "icon": "asets/img/l03.jpg",
+    "title": "Xiaomi/小米 小  ",
+    "inf": "米电视4A 65英寸",
+    "price": "￥3900.0"
+  },{
+    "id": 1045,
+    "icon": "asets/img/l04.jpg",
+    "title": "兰蔻清莹柔肤水  ",
+    "inf": "400ml大粉水舒",
+    "price": "￥420.0"
+  },{
+    "id": 1046,
+    "icon": "asets/img/l05.jpg",
+    "title": "sk-iisk2神仙水小  ",
+    "inf": "灯泡大红瓶skii网",
+    "price": "￥3350.0"
+  },{
+    "id": 1047,
+    "icon": "asets/img/l06.jpg",
+    "title": "sk-iisk神仙水  ",
+    "inf": "skii护肤精华露护",
+    "price": "￥1450.0"
+  },{
+    "id": 1048,
+    "icon": "asets/img/l07.jpg",
+    "title": "雅诗兰黛小棕瓶  ",
+    "inf": "眼霜 肌透修护眼",
+    "price": "￥510.0"
+  },{
+    "id": 1049,
+    "icon": "asets/img/l08.jpg",
+    "title": "兰蔻小黑瓶大眼  ",
+    "inf": "精华眼霜眼部及",
+    "price": "￥680.0"
+  },{
+    "id": 1050,
+    "icon": "asets/img/l09.jpg",
+    "title": "方太  ",
+    "inf": "JQD2T + HT88E",
+    "price": "￥7680.0"
+  },{
+    "id": 1051,
+    "icon": "asets/img/l10.jpg",
+    "title": "Hair /海尔  ",
+    "inf": "EG10014B39GU",
+    "price": "￥2699.0"
+  },{
+    "id": 1052,
+    "icon": "asets/img/l11.jpg",
+    "title": "Gree/格力 KFR-   ",
+    "inf": "26GW/NhBab3",
+    "price": "￥3049.0"
+  },{
+    "id": 1053,
+    "icon": "asets/img/l12.jpg",
+    "title": "全棉时代 婴儿纯",
+    "inf": "棉柔巾 新生儿干",
+    "price": "￥324.0"
+  },{
+    "id": 1054,
+    "icon": "asets/img/l13.jpg",
+    "title": "亿建精灵ELF跑步",
+    "inf": "机家用款多功能",
+    "price": "￥1799.0"
+  },{
+    "id": 1055,
+    "icon": "asets/img/l14.jpg",
+    "title": "Hair/海尔 BCD-",
+    "inf": "573WDENU1智",
+    "price": "￥3499.0"
+  },{
+    "id": 1056,
+    "icon": "asets/img/l15.jpg",
+    "title": "威露士有氧除洗",
+    "inf": "螨除菌洗衣液18",
+    "price": "￥119.0"
+  },{
+    "id": 1057,
+    "icon": "asets/img/l16.jpg",
+    "title": "维达超韧抽纸3层",
+    "inf": "M码120抽24包",
+    "price": "￥59.9.0"
+  },{
+    "id": 1058,
+    "icon": "asets/img/l17.jpg",
+    "title": "雅诗兰黛粉底液",
+    "inf": "dw持装粉底液",
+    "price": "￥390.0"
+  },{
+    "id": 1059,
+    "icon": "asets/img/l18.jpg",
+    "title": "美的净水器家用",
+    "inf": "直饮自来水过滤",
+    "price": "￥1998.0"
+  },{
+    "id": 1060,
+    "icon": "asets/img/l19.jpg",
+    "title": "欧舒丹护手霜樱",
+    "inf": "花乳木果玫瑰补",
+    "price": "￥360.0"
+  },{
+    "id": 1061,
+    "icon": "asets/img/l20.jpg",
+    "title": "九阳新款加热真",
+    "inf": "空破壁料理机",
+    "price": "￥1299.0"
+  }
+]
+
+}

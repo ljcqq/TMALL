@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../asets/css/enter.css" />
+		<link rel="stylesheet" href="../asets/css/public1.css" />
+		<script src="../node_modules1/jquery/dist/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="logo">
+			<a href="#"></a>
+		</div>
+		<div id="banner">
+			<a href="#"></a>
+		</div>
+		<div id="form">
+			<h3><a href=" #">账号登录</a></h3>
+			<input class="inp3" type="text" placeholder="邮箱/手机号码/小米账号"  style="margin-bottom: 14px;"/>
+			<input class="inp4" type="password" />
+			<h4 class="title">密码</h4>
+			<div class="check">
+				<h4>!请输入账号</h4>
+				<h4>!账号或密码不正确</h4>
+				<h4>!请输入密码</h4>
+			</div>
+			<button>登录</button>
+			<h4><a href="#">手注册机短信登录/注册</a> <a href="#" class="a1">立即注册 |</a> <a href="#" class="a2">忘记密码?</a></h4>
+			<fieldset>
+				<legend>其他登录方式</legend>
+				<a href="#">&#xe64e;</a>
+				<a href="#">&#xe626;</a>
+				<a href="#">&#xe61f;</a>
+				<a href="#">&#xe666;</a>
+			</fieldset>
+		</div>
+		<script type="text/javascript">
+			var arr = document.cookie.split(";")
+			
+			$('#logo a ').click(function(){
+				location.href = "index.html"
+			})
+			$('#form input[type=password]').focus(function(){
+				$('#form .title').css('display','none')
+			})
+			$('#form .a1').click(function(){
+				location.href = "register .html"
+			})
+			$('#form button').click(function(){
+                location.href ="../index.html"
+				for ( var i = 0 ; i <arr.length; i++){
+				var list = arr[i].split('=');
+				if(list[0].indexOf(name != -1)){
+					console.log(list[1])
+					json = JSON.parse(list[1])
+					console.log(json)
+				}
+				if(json.id == $('.inp3').val() && json.code == $('.inp4').val()){
+					location.href ="../index.html"
+				}else{
+//					alert($('#form .check h4').eq(1))
+                    $('#form .check').css('display','block')
+					$('#form .check h4').eq(1).css('display','block')
+				}
+			    }
+			})
+		</script>
+		<div id="footer1">
+			<p>
+				<a href="#">简体</a>
+				<a href="#">简体</a>
+				<a href="#">English</a>
+				<a href="#">常见问题</a>
+			</p>
+			<p>阿里巴巴公司版权所有-杭ICP备10046444-<a href="#"><span></span></a>杭公网安备11010802020134号-杭ICP证110507号</p>
+		</div>
+	</body>
+</html>
